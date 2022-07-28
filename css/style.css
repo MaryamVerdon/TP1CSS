@@ -30,19 +30,14 @@ nav ul {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 30px auto;
+  align-items: center;
 }
 h1 {
   font-size: 5rem;
 }
-
 .header-left-container h3 {
   color: #474dff;
   font-size: 1.8rem;
-}
-
-.header-left {
-  display: grid;
-  align-items: center;
 }
 .header-right {
   width: 50%;
@@ -60,7 +55,6 @@ h1 {
 .btn-container {
   display: grid;
 }
-
 button {
   border: none;
   background: #474dff;
@@ -85,4 +79,61 @@ button {
 }
 .img-container img {
   height: 60px;
+}
+
+/* *********** MEDIA QUERIES ************** */
+
+/* Tablette */
+
+@media screen and (max-width: 870px) {
+
+ h1 {
+  font-size: 2.5rem;
+ }
+
+ .header-left-container h3 {
+  font-size: 1rem;
+ }
+
+ p {
+  font-size: 0.7rem;
+ }
+
+}
+
+/* Mobil */
+
+@media screen and (max-width: 600px) { 
+  nav {
+    grid-template-columns: 35% 75%;
+  }
+
+  nav ul {
+    font-size: 0.7rem;
+  }
+
+  .header {
+    display: block;
+  }
+
+  #modem {
+    width: 90%;
+  }
+
+  .infos {
+    display: block;
+  }
+
+  .btn-container {
+    justify-content: center;
+  }
+
+  .infos h3 {
+    text-align: center;
+  }
+
+  .img-container img {
+    height: 33px;
+  }
+
 }
